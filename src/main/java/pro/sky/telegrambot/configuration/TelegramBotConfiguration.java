@@ -13,10 +13,9 @@ public class TelegramBotConfiguration {
     private String token;
 
     @Bean
-    public TelegramBot telegramBot() {
+    public TelegramBot bot() {
         TelegramBot bot = new TelegramBot(token);
         bot.execute(new DeleteMyCommands());
         return bot;
     }
-
 }

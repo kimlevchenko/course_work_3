@@ -9,7 +9,7 @@ public class NotificationTask {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long task_id;
+    private long taskId;
 
     private String text;
     @Column(name = "chat_id")
@@ -21,11 +21,11 @@ public class NotificationTask {
     }
 
     public long getId() {
-        return task_id;
+        return taskId;
     }
 
-    public void setId(long task_id) {
-        this.task_id = task_id;
+    public void setId(long taskId) {
+        this.taskId = taskId;
     }
 
     public String getText() {
@@ -55,7 +55,7 @@ public class NotificationTask {
     @Override
     public String toString() {
         return "NotificationTask{" +
-                "task_id=" + task_id +
+                "taskId=" + taskId +
                 ", text='" + text + '\'' +
                 ", chatId=" + chatId +
                 ", dateTime=" + dateTime +
